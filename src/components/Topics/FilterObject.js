@@ -35,7 +35,7 @@ class FilterObject extends React.Component {
                 <span className="puzzleText">{JSON.stringify(this.state.unFilteredArray)}</span>
                 <input className="inputLine" value={this.state.userInput} onChange={this.updateUserInput}></input>
                 <button className="confirmationButton" onClick={() => this.filterArrayOfObjects(this.state.userInput)}>Filter</button>
-                <span className="resultsBox filterObjectRB">{JSON.stringify(this.state.filteredArray)}</span>
+                <span className="resultsBox filterObjectRB">Filtered: {JSON.stringify(this.state.filteredArray)}</span>
             </div>
         );
     }

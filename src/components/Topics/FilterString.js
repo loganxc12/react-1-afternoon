@@ -34,7 +34,7 @@ class FilterString extends Component {
                 <span className="puzzleText">{JSON.stringify(this.state.unFilteredArray)}</span>
                 <input className="inputLine" value={this.state.userInput} onChange={this.updateUserInput}></input>
                 <button className="confirmationButton" onClick={()=>this.filterArrayOfStrings(this.state.userInput)}>Filter</button>
-                <span className="resultsBox filterStringRB">{JSON.stringify(this.state.filteredArray)}</span>
+                <span className="resultsBox filterStringRB">Filtered: {JSON.stringify(this.state.filteredArray)}</span>
             </div>
         );
     }
